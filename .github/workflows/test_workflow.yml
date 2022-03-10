@@ -23,7 +23,7 @@ jobs:
       - name: Run tests with pytest
         run: pytest 
   printout:
-    need: build
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: printout
