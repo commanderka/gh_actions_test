@@ -22,3 +22,11 @@ jobs:
           pip install pytest
       - name: Run tests with pytest
         run: pytest 
+  printout:
+    need: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: printout
+        run: |
+        echo "Hello world!"
+  
